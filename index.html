@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Andrew Martis</title>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"></link>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="https://rawgithub.com/srobbin/jquery-backstretch/master/jquery.backstretch.min.js"></script>
+        <style>
+            html, body{
+                height:100%;
+            }
+            #border{
+                height:100%;
+                border:50px solid black;
+            }
+            #text{
+                position:absolute;
+                top:100px;
+                left:100px;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                var image = "http://24.media.tumblr.com/f87b54bbce49e59debf7606662f54862/tumblr_n0hpxxDOJ91st5lhmo1_1280.jpg";
+                if(image) $.backstretch(image);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="border"></div>
+        <div id="text">
+            This is my text
+        </div>
+    </body>
+</html>
