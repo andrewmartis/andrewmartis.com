@@ -1,6 +1,7 @@
 <html>
     <head>
-        <title>Andrew Martis</title>
+        <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <title>Andrew Martis | Design & Illustration</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"></link>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script src="https://rawgithub.com/srobbin/jquery-backstretch/master/jquery.backstretch.min.js"></script>
@@ -8,19 +9,52 @@
             html, body{
                 height:100%;
             }
+            a:link {color:#FFFFFF; border-bottom: 2px solid white; text-decoration: none;}
+            a:visited {color:#FFFFFF; border-bottom: 2px solid white; text-decoration: none;} 
+            a:hover {color:#FFFFFF; border-bottom: 2px solid white; text-decoration: none;}
+            a:active {color:#FFFFFF; border-bottom: 2px solid white; text-decoration: none;}
+
             #border{
                 height:100%;
-                border:50px solid black;
+                border:20px solid white;
             }
             #text{
                 position:absolute;
                 top:100px;
                 left:100px;
+                font-family: 'Varela Round', sans-serif;
+                color: white;
+                font-size: 18px;
+                letter-spacing: 1px;
+                max-width: 70%;
             }
+
+            @media (max-width: 600px) {
+                #text{ 
+                    position: absolute;
+                    top: 60px;
+                    left: 60px;
+                    font-family: 'Varela Round', sans-serif;
+                    color: white;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    max-width: 55%;
+            }
+                #border{
+                    height:100%;
+                    border: 10px solid white;
+                }
+                a:link {color:#FFFFFF; border-bottom: 1px solid white; text-decoration: none;}
+                a:visited {color:#FFFFFF; border-bottom: 1px solid white; text-decoration: none;} 
+                a:hover {color:#FFFFFF; border-bottom: 1px solid white; text-decoration: none;}
+                a:active {color:#FFFFFF; border-bottom: 1px solid white; text-decoration: none;}
+        }
+        
+            
         </style>
         <script>
             $(document).ready(function(){
-                var image = "http://24.media.tumblr.com/f87b54bbce49e59debf7606662f54862/tumblr_n0hpxxDOJ91st5lhmo1_1280.jpg";
+                var image = "http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5255bf45a4a45_1.JPG";
                 if(image) $.backstretch(image);
             });
         </script>
@@ -28,7 +62,15 @@
     <body>
         <div id="border"></div>
         <div id="text">
-            This is my text
+
+            <p>Hello, my name is Andrew Martis</p>
+
+            <p>I'm a graphic designer in <a href="https://www.google.com/maps/search/Brookyln,+NY/@40.645244,-73.9449975,11z">Brooklyn, NY</a> and I currently work with all the awesome folks at <a href="http://www.holstee.com">Holstee</a></p>
+            <p>You can follow my thoughts on <a href="http://www.twitter.com/andrewmartis">twitter</a>, shots on <a href="http://www.dribbble.com/andrewmartis">dribbble</a>, or latest photos on <a href="http://www.instagram.com/andrewmartis">instagram</a></p>
+            <p>Feel free to <a href="mailto:great.knews@gmail.com" title="Hello!">say hello!</a></p>
+            <p><a href="http://files.andrewmartis.com/resume_2014.pdf">Resume</a></p>
+
+        
         </div>
     </body>
 </html>
